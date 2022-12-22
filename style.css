@@ -1,0 +1,177 @@
+:root {
+    background-color: darkcyan;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background-color: rgb(218, 215, 212);
+    height: 100px;
+    border-radius: 10px;
+}
+
+.signInBtn{
+    font-size: 30px;
+    border-style: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.signInBtn{
+    font-size: 30px;
+    border-style: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    transition: transform 0.5s;
+    
+}
+
+.signInBtn:hover{
+    transform: scale(1.05);
+    background-color: rgb(214, 206, 193);
+    border: .5px solid;
+}
+
+.leftHeader{
+    float: left;
+    margin:0px 40px;
+}
+.rightHeader{
+    margin:23px 30px;
+    float: right;
+}
+
+
+
+.addBookBtn {
+    position: relative;
+    display: block;
+    margin: 25px auto;
+    font-size: 24px;    
+    background: none;
+    font-weight: 700;
+    border-style: hidden;
+    cursor: pointer;
+}
+
+.addBookBtn:hover{
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 5px;
+}
+
+.addBook {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.addContainer{
+    padding: 1px;
+    background-color: darkcyan;
+    position:sticky;
+    top: 0px;
+    align-items: center;
+    z-index: 2;
+}
+
+.bookForm {
+    position:sticky;
+    top: 100px;
+    visibility: hidden;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: block;
+    padding: 20px 10px;
+    background-color: rgb(218, 215, 212);
+    text-align: center;
+    width: 300px;
+    z-index: 2;
+}
+
+.bookForm>div>* {
+    margin: 10px;
+}
+
+.bookContainer{
+    position: relative;
+    top: -450px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    z-index: 1;    
+}
+
+.card{
+    flex: 1;
+    background-color: rgb(218, 215, 212);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 35%;
+    max-width: 250px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.card > button{
+    width: 90%;
+    margin: 8px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: hidden;
+    transition: transform 0.5s;
+
+    transform: scale(1);
+    font-weight: 400;
+
+}
+
+.card > button:hover{    
+    transform: scale(1.05);
+    background-color: rgb(214, 206, 193);
+    /* animation: test .9s;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes test{
+    25% {border-top: 0px;      border-left: .3px solid black; transition: all 0.5s ease-in-out;}
+    50% {border-left: 0px;      border-bottom: .3px solid black; transition: all 0.5s ease-in-out; }
+    75% {border-bottom: 0px;      border-right: .3px solid black; transition: all 0.5s ease-in-out;}
+    100% {border-right: 0px;      border-top: .3px solid black; transition: all 0.5s ease-in-out;}
+}
+
+
+
+.inputs {
+    padding-left: 10px;
+    border-style: hidden;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.inputs:focus {
+    outline: none;
+}
+
+.readChecked{
+    padding: 10px;
+}
+
+.submitBook{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: hidden;
+    font-size: 20px;
+    background-color: rgb(128, 243, 128);
+}
+
+label{
+    font-weight: 500;
+}
