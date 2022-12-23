@@ -66,6 +66,24 @@
     margin: 0 auto;
 }
 
+.inputContainer{
+    position: relative;
+}
+
+.errorInput{
+    position: relative;
+    background-color: rgb(241, 18, 18);
+    top: 0px;
+    animation: shakeIt .3s;
+}
+
+@keyframes shakeIt{
+    0%{left: 0px;}
+    33%{left: 5px;}
+    66%{left: -5px;}
+    100%{left: 0px;}
+}
+
 .addContainer{
     padding: 1px;
     background-color: darkcyan;
