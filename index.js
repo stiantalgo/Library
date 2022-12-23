@@ -30,6 +30,14 @@ function Book(title, author, pages, hasBeenRead){
 }
 
 function addBookToLibrary(){
+    // Check if book is already in library
+    for(let book of myLibrary){
+        if(book.title === bookTitle.value){
+            return;
+        }
+    }
+
+    // Add book and update the library
     myLibrary.push(new Book(bookTitle.value, bookAuthor.value, bookPages.value, readChecked.checked));
     updateLibrary();
     openAddBookWindow();
@@ -55,6 +63,7 @@ function clearInput(){
 }
 
 function updateLibrary(){
+
     let index = myLibrary.length -1;
 
     let newCard = document.createElement('div');
@@ -120,18 +129,3 @@ function checkRead(myBtn){
         myBtn.textContent = "Not Read";
     }
 }
-
-
-
-
-
-
-
-
-{/* <div class="card">
-<h3 class="cardTitle">Title: Harry pottah</h3>
-<h3 class="cardAuthor">Author: JRR tolkien JR</h3>
-<h3 class="cardPages">Pages: 858</h3>
-<button class="readBtn">Read</button>
-<button class="remove">Remove book</button>
-</div> */}
